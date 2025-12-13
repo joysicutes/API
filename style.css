@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0b0b5a;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #02024d;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-logo {
+  height: 40px;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+  width: 100%;
+}
+
+/* ROW 1 */
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* ROW 2 */
+.two-columns {
+  display: flex;
+  height: 350px;
+}
+
+.card {
+  flex: 1;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* DARK OVERLAY */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.card h2,
+.card p {
+  position: relative;
+  z-index: 1;
+}
+
+/* LEFT BACKGROUND */
+.card.left {
+  background-image: url("assets/images/characters.jpg");
+}
+
+/* RIGHT BACKGROUND */
+.card.right {
+  background-image: url("assets/images/planets.jpg");
+}
+
+/* ROW 3 */
+.quote {
+  background: #f5f0e6;
+  color: #000;
+  text-align: center;
+  padding: 40px;
+}
+
+.quote-logo {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.btn {
+  background: #d9532b;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ROW 4 */
+.footer {
+  background: #02024d;
+  text-align: center;
+  padding: 15px;
+}
